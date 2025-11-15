@@ -1,0 +1,99 @@
+-- phpMyAdmin SQL Dump
+-- version 5.2.2
+-- https://www.phpmyadmin.net/
+--
+-- Host: localhost:3306
+-- Generation Time: Nov 15, 2025 at 08:00 PM
+-- Server version: 10.6.24-MariaDB-log
+-- PHP Version: 8.4.14
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `hesarsorkh_ehya`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `oc_zone`
+--
+
+CREATE TABLE `oc_zone` (
+  `zone_id` int(11) NOT NULL,
+  `country_id` int(11) NOT NULL,
+  `name` varchar(128) NOT NULL,
+  `code` varchar(32) NOT NULL,
+  `status` tinyint(1) NOT NULL DEFAULT 1
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_general_ci;
+
+--
+-- Dumping data for table `oc_zone`
+--
+
+INSERT INTO `oc_zone` (`zone_id`, `country_id`, `name`, `code`, `status`) VALUES
+(1538, 101, 'تهران', 'TEH', 1),
+(4033, 101, 'قم', 'QM', 1),
+(1540, 101, 'مرکزی', 'MKZ', 1),
+(1541, 101, 'قزوین', 'QAZ', 1),
+(1542, 101, 'گیلان', 'GIL', 1),
+(1543, 101, 'اردبیل', 'ARD', 1),
+(1544, 101, 'زنجان', 'ZAN', 1),
+(1545, 101, 'آذربایجان شرقی', 'EAZ', 1),
+(1546, 101, 'آذربایجان غربی', 'WEZ', 1),
+(1547, 101, 'کردستان', 'KRD', 1),
+(1548, 101, 'همدان', 'HMD', 1),
+(1549, 101, 'کرمانشاه', 'KRM', 1),
+(1550, 101, 'ایلام', 'ILM', 1),
+(1551, 101, 'لرستان', 'LRS', 1),
+(1552, 101, 'خوزستان', 'KZT', 1),
+(1553, 101, 'چهارمحال و بختیاری', 'CMB', 1),
+(1554, 101, 'کهکیلویه و بویر احمد', 'KBA', 1),
+(1555, 101, 'بوشهر', 'BSH', 1),
+(1556, 101, 'فارس', 'FAR', 1),
+(1557, 101, 'هرمزگان', 'HRM', 1),
+(1558, 101, 'سیستان و بلوچستان', 'SBL', 1),
+(1559, 101, 'کرمان', 'KRB', 1),
+(1560, 101, 'یزد', 'YZD', 1),
+(1561, 101, 'اصفهان', 'EFH', 1),
+(1562, 101, 'سمنان', 'SMN', 1),
+(1563, 101, 'مازندران', 'MZD', 1),
+(1564, 101, 'گلستان', 'GLS', 1),
+(1565, 101, 'خراسان شمالی', 'NKH', 1),
+(1566, 101, 'خراسان رضوی', 'RKH', 1),
+(1567, 101, 'خراسان جنوبی', 'SKH', 1),
+(3969, 101, 'البرز', 'ALB', 1),
+(4034, 101, 'تهران (غیر از مناطق 22گانه- شهرستان های استان تهران)', 'TH2', 0);
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `oc_zone`
+--
+ALTER TABLE `oc_zone`
+  ADD PRIMARY KEY (`zone_id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `oc_zone`
+--
+ALTER TABLE `oc_zone`
+  MODIFY `zone_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4035;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
