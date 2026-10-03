@@ -66,3 +66,4 @@ jobs:
           protocol: ftp
           local-dir: dist/
           server-dir: ${{ steps.meta.outputs.remote }}
+          state-name: .ftp-deploy-sync-state-iran_ostan_shahr-upload-1.json
